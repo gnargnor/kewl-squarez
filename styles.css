@@ -1,0 +1,89 @@
+:root {
+  --bg-color: lightblue;
+  --font-color: pink;
+  --card-one-x: 0;
+  --card-one-y: 0;
+  --card-two-x: 0;
+  --card-two-y: 0;
+  --card-three-x: 0;
+  --card-three-y: 0;
+  --card-four-x: 0;
+  --card-four-y: 0;  
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+h1 {
+  margin: auto;
+  height: 50px;
+  width: 400px;
+  background-color: blue;
+}
+
+.container {
+  clear: both;
+}
+
+.content {
+  display: flex;
+  height: 300px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+  
+}
+
+label {
+  background-color: blue;
+}
+
+.card {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 40px arial;
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+}
+
+.card-one {
+  transform: perspective(400px) rotateX(calc(var(--card-one-x) * 1deg)) rotateY(calc(var(--card-one-y) * 1deg));
+  transition: transform 0.3s;
+  background-color: lightseagreen;
+}
+
+.card-two {
+  transform: perspective(400px) rotateX(calc(var(--card-two-x) * 1deg)) rotateY(calc(var(--card-two-y) * 1deg));
+  transition: transform 0.3s;
+  background-color: lightgoldenrodyellow;
+}
+
+.card-three {
+  transform: perspective(400px) rotateX(calc(var(--card-three-x) * 1deg)) rotateY(calc(var(--card-three-y) * 1deg));
+  transition: transform 0.3s;
+  background-color: lightsalmon;
+}
+
+.card-four {
+  transform: perspective(400px) rotateX(calc(var(--card-four-x) * 1deg)) rotateY(calc(var(--card-four-y) * 1deg));
+  transition: transform 0.3s;
+  background-color: lightslategray;
+}
+
+.slider {
+
+}
+
+.slider-x {
+
+}
+
+.slider-y {
+
+}
+
